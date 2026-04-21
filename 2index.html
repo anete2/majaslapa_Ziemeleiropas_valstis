@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spēle - Ziemeļvalstis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="speles_sakums">
+        <header>
+            <div class="poga_augsa">
+                  <a href="1index.html"><button class="poga2">Atpakaļ uz sākuma lapu!</button></a>
+            </div>
+
+            <h1>SPĒLE</h1>
+            <p>Vai esi gatavs pārbaudīt zināšanas?</p>
+        </header>
+        <div class="sakuma-centrs">
+            <button class="sakuma-poga" onclick="raditspeli()">SĀKT SPĒLI</button>
+        </div>
+    </div>
+
+    <div id="speles_lapa" style="display: none;">
+        <header>
+            <h1>Taisnība vai meli?</h1>
+        </header>
+        <div class="speles_lauks">
+            <h2 id="jautajums">Jautājums parādīsies šeit...</h2>
+            
+            <div class="spelei_pogas">
+                <button class="poga_patiess" onclick="parbauda(true)">Patiess</button>
+                <button class="poga_aplams" onclick="parbauda(false)">Aplams</button>
+            </div>
+
+            <p id="atsauksme"></p>
+            <h3 class="punktu_skaititajs">Punkti: <span id="punkti">0</span></h3>
+            <button onclick="atpakal()">Beigt spēli</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

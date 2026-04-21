@@ -1,0 +1,241 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgb(125, 161, 173);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 20px;
+}
+
+header {
+    position: relative; 
+    margin-bottom: 30px;
+    padding-top: 50px; 
+}
+
+#pulkstenis {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: left; /* Teksts sakārtots uz kreiso pusi */
+    font-size: 16px;
+    color: #2c3e50;
+    background: rgba(255, 255, 255, 0.5); /* Caurspīdīgs fons */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#pulkstenis p {
+    margin: 0; 
+    font-size: 16px; 
+}
+
+/* --- MEKLĒTĀJS --- */
+.mekletajs {
+    margin: 15px 0;
+}
+
+#ievadi_valsti {
+    padding: 10px;
+    border: 2px solid #c9c3c3;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.mekletajs button {
+    padding: 10px 14px;
+    cursor: pointer;
+    background-color: rgb(11, 61, 102);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+.valstu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 vienādas kolonnas */
+    gap: 30px; /* Atstarpe starp pāriem */
+    margin-top: 0 auto; /* Nocentrē visu lapas vidū */
+}
+
+.valstis {
+    background-color: #f4f4f4;
+    border: 5px double #000000;
+    border-radius: 10px; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s;
+    min-height: 300px; /* Nodrošina, ka visi lodziņi ir pietiekami gari un vienādi */
+}
+
+.valstis img {
+    width: 100%; /* Karogs aizpilda bloka platumu */
+    max-width: 280px; /* Bet ne lielāks par 200px */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 20%;
+    object-fit: cover; /*bilde rāmītī*/
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+/* --- VIRSRAKSTI LODZIŅOS --- */
+.valstis h3 {
+    font-size: 20px; 
+    margin: 15px 0;
+}
+
+/* --- POGA LODZIŅĀ --- */
+.valstis button {
+    font-size: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.valstis:hover {
+    transform: scale(1.02);
+}
+
+.pasleptais_teksts {
+    display: none;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #000000;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    line-height: 1.5;
+}
+.poga_leja {
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sakuma_poga {
+    background: rgb(188, 112, 77);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 14px 30px;
+    border-radius: 20px;
+    border: 3px solid #000;
+    cursor: pointer;
+    font-family: "Times New Roman", serif;
+    transition: 0.3s;
+}
+
+.sakuma_poga :hover {
+    background: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+/* --- SPĒLE --- */
+
+.poga_augsa {
+    margin: 40px 0;
+    display: flex;
+    justify-content: left;
+}
+
+.poga2 {
+    background: rgb(188, 112, 77);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 14px 30px;
+    border-radius: 20px;
+    border: 3px solid #000;
+    cursor: pointer;
+    font-family: "Times New Roman", serif;
+    transition: 0.3s;
+}
+
+.poga2 :hover {
+    background: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+
+.sakuma-poga {
+    background: rgb(11, 61, 102);
+    color: white;
+    font-size: 30px;
+    padding: 16px 32px;
+    border-radius: 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.speles_lauks {
+    background: rgb(216, 161, 135);
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    max-width: 800px; 
+    width: 90%;
+    margin: 20px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.spelei_pogas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.poga_patiess {
+    background-color: rgb(57, 122, 57);
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer; 
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.poga_aplams {
+    background-color: rgb(150, 31, 31);
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#atsauksme {
+    height: 30px;
+    font-weight: bold; 
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+/* Dizains telefoniem */
+@media (max-width: 600px) {
+    .valstu-grid {
+        grid-template-columns: 1fr;
+    }
+    .speles_lauks {
+        width: 95%;
+        padding: 10px;
+    }
+}

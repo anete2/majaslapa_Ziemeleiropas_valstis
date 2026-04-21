@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziemeļeiropas valstis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info_lapa">
+        <header>
+            <div class="header-top">
+                <div id="pulkstenis">
+                    <p id="datums"></p>
+                    <p id="laiks"></p>
+                </div>
+                <a href="2index.html">
+                </a>
+            </div>
+
+            <h1>Ziemeļeiropas valstis</h1>
+
+            <div class="mekletajs">
+                <input type="text" id="ievadi_valsti" placeholder="Ieraksti valsti (piem. Latvija)...">
+                <button onclick="mekletValsti()">Meklēt</button>
+            </div>
+            <p class="apraksts">Iepazīsties ar informāciju un pārbaudi zināšanas spēlē!</p>
+        </header>
+
+        <div class="valstu-grid">
+            <div class="valstis" id="Latvija">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg" alt="Karogs">
+                <h3>Latvija</h3>
+                <button onclick="raditTekstu('info_lv')">Uzzināt vairāk!</button>
+                <p id="info_lv" class="pasleptais_teksts">Latvija ir valsts Ziemeļeiropā, Baltijas jūras krastā, kas savu neatkarību pasludināja 1918. gada 18. novembrī un pēc ilgstošiem okupācijas gadiem to pilnībā atguva 1991. gadā, kļūstot par Eiropas Savienības un NATO dalībvalsti. Valsts nozīmīgākais simbols ir sarkanbaltsarkanais karogs, kas ir viens no senākajiem pasaulē un kura krāsas simbolizē par brīvību izlietās asinis un taisnīgumu, savukārt valsts ģerbonī ietvertas trīs zvaigznes kā vēsturisko novadu simboli, uzlecoša saule, lauva un grifs. Latvijas dabas un kultūras identitāti raksturo nacionālie simboli kā ozols, liepa, baltā cielava un pīpene, bet tautas dvēsele spoguļojas Dziesmu un deju svētkos, kā arī senajās Jāņu svinēšanas tradīcijās. Vēsturiski Latvija iedalās četros novados – Kurzemē, Vidzemē, Zemgalē un Latgalē, kuros atrodami unikāli apskates objekti: baroka pērle Rundāles pils, romantiskā Kuldīga ar Eiropas platāko ūdenskritumu Ventas rumbu, dabas takas Ķemeru purvā un viduslaiku vēstures elpa Siguldā, padarot valsti par vienu no zaļākajām un stāstiem bagātākajām vietām pasaulē.</p>
+            </div>
+
+            <div class="valstis" id="Lietuva">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Lithuania.svg/1280px-Flag_of_Lithuania.svg.png" alt="Karogs">
+                <h3>Lietuva</h3>
+                <button onclick="raditTekstu('info_lt')">Uzzināt vairāk!</button>
+                <p id="info_lt" class="pasleptais_teksts">Lietuva ir lielākā Baltijas valsts ar senu un godalgotu vēsturi, kas aizsākās ar Lietuvas Dižkunigaitijas varenību viduslaikos un turpinājās ar neatkarības atgūšanu 1918. gadā un tās drosmīgu atjaunošanu 1990. gadā, mūsdienās esot modernai Eiropas Savienības un NATO dalībvalstij. Valsts nacionālo identitāti spilgti raksturo trīskrāsu karogs, kurā dzeltenā krāsa simbolizē sauli, zaļā – dabu, bet sarkanā – drosmi, kā arī vēsturiskais Vīta (Vytis) ģerbonis un lietuviešu valoda, kas ir viena no senākajām dzīvajām indoeiropiešu valodām pasaulē. Kultūras dzīvē dominē spēcīgas katoļticības tradīcijas, Dziesmu svētki un kulinārais mantojums ar cepelīniem, savukārt tūristus piesaista barokālā Viļņas vecpilsēta, unikālais Krusta kalns, majestātiskā Traķu ezera pils un Kuršu kāpu neskartais dabas skaistums Nidā.</p>
+            </div>
+
+            <div class="valstis" id="Igaunija">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Estonia.svg/330px-Flag_of_Estonia.svg.png" alt="Karogs">
+                <h3>Igaunija</h3>
+                <button onclick="raditTekstu('info_est')">Uzzināt vairāk!</button>
+                <p id="info_est" class="pasleptais_teksts">Igaunija ir viena no trim Baltijas valstīm, kuras pašnosaukums Eesti, iespējams, cēlies no Tacita minētajiem aistiem un kuras vēsturi kopš 13. gadsimta veidojusi dāņu, vācu, zviedru un krievu virskundzība, līdz pat neatkarības pasludināšanai 1918. gada 24. februārī. Pēc PSRS un nacistiskās Vācijas okupācijas gadiem valsts pilnībā atjaunoja savu suverenitāti 1991. gada 20. augustā, vēlāk kļūstot par Eiropas Savienības, NATO un ESAO dalībvalsti un izceļoties kā globāla digitālo inovāciju līdere. Igaunijas valsts simbols ir trīskrāsu karogs, kurā zilā krāsa apzīmē debesis un ticību, melnā – zemi un vēstures slogu, bet baltā – tīrību un nākotni, savukārt tās nacionālie dārgumi ir rudzupuķe un bezdelīga. Valsts ģeogrāfiju raksturo vairāk nekā 2300 salu (lielākās – Sāmsala un Hījumā), ezeriem bagātas augstienes dienvidos ar Baltijas augstāko virsotni Lielo Munameģi un klinšainā ziemeļu piekraste. Tūristus piesaista UNESCO mantojumā iekļautā Tallinas viduslaiku vecpilsēta, universitātes pilsēta Tartu, Pērnavas kūrorts, kā arī Lahemā nacionālais parks, kas kopā ar igauņu unikālo Baltijas somu kultūru un valodu veido ziemeļnieciski savdabīgu un modernu Eiropas valsti.</p>
+            </div>
+
+            <div class="valstis" id="Zviedrija">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/250px-Flag_of_Sweden.svg.png" alt="Karogs">
+                <h3>Zviedrija</h3>
+                <button onclick="raditTekstu('info_swe')">Uzzināt vairāk!</button>
+                <p id="info_swe" class="pasleptais_teksts">Zviedrija ir trešā lielākā Eiropas Savienības valsts, kas atrodas Skandināvijas pussalā un kopš 2024. gada ir NATO dalībvalsts, lepojoties ar augstu dzīves līmeni un unikālu statusu kā vienīgā valsts pasaulē, kur zīmju valoda ir oficiāla valsts valoda. Valsts vēsture sakņojas vikingu laikmetā un 17. gadsimta Zviedrijas impērijas spožumā, kam sekoja divu gadsimtu ilga neitralitātes politika, kuru pārtrauca tikai nesenās izmaiņas ģeopolitiskajā situācijā. Zviedrijas nacionālie simboli ir zili dzeltenais karogs (dzeltens krusts uz zila fona, kas simbolizē sauli un debesis), trīs kroņu motīvs un ziemeļnieciskā "lagom" filozofija, kas iestājas par līdzsvaru visās dzīves jomās. Ģeogrāfiski tā ir kontrastu zeme ar plašiem mežiem, tūkstošiem ezeru, klinšainiem arhipelāgiem un kalniem ziemeļos, savukārt tūristus piesaista galvaspilsēta Stokholma ar tās karalisko pili un "Vasa" muzeju, vēsturiskā Visbija Gotlandes salā, Lapzemes ziemeļblāzmas, kā arī modernās Gēteborgas un Malmes pilsētas.</p>
+            </div>
+
+            <div class="valstis" id="Somija">
+                <img src="https://lv2.pigugroup.eu/colours/286/885/46/28688546/somijas-karogs-125x204cm-10391_reference.jpg" alt="Karogs">
+                <h3>Somija</h3>
+                <button onclick="raditTekstu('info_fin')">Uzzināt vairāk!</button>
+                <p id="info_fin" class="pasleptais_teksts">Somija, pazīstama kā "Tūkstoš ezeru zeme", ir viena no Eiropas vistālāk ziemeļos esošajām valstīm, kuras vēsturi ilgstoši noteica piederība Zviedrijai un vēlāk Krievijas Impērijai, līdz tā 1917. gada 6. decembrī pasludināja neatkarību un mūsdienās ir stabila parlamentāra republika, Eiropas Savienības un NATO dalībvalsts. Valsts nacionālie simboli ir balti zilais karogs (zils krusts uz balta fona), kas simbolizē neskaitāmos ezerus un tīro sniegu, nacionālais dzīvnieks brūnais lācis un putns ziemeļu gulbis, savukārt tās kultūras pamatu veido somu un zviedru valodu kopdzīve, nacionālais eposs "Kalevala" un visā pasaulē slavenā saunas tradīcija. Ģeogrāfiski Somija ir mežiem un purviem bagāta zeme ar vairāk nekā 187 000 ezeru, unikālajām šērām piekrastē un skarbo Lapzemes dabu ziemeļos, kur atrodas valsts augstākā virsotne Halti kalns un kur ziemās vērojama ziemeļblāzma. Tūristus Somijā piesaista modernā galvaspilsēta Helsinki ar tās unikālo arhitektūru, Santaklausa mājvieta Rovaniemi Lapzemē, Saima ezera labirinti un Ālandu salu arhipelāgs, piedāvājot gan augsti attīstītu pilsētvidi, gan neskartu mieru pie dabas.</p>
+            </div>
+
+            <div class="valstis" id="Dānija">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMD7mUigrxGB7pF8MTxdTQGr2qwLLjUlFj9Q&s" alt="Karogs">
+                <h3>Dānija</h3>
+                <button onclick="raditTekstu('info_den')">Uzzināt vairāk!</button>
+                <p id="info_den" class="pasleptais_teksts">Dānija ir Ziemeļeiropas valsts, kas atrodas Jitlandes pussalā un uz vairāk nekā 440 salām, robežojoties ar Vāciju un Kanādu, un tās sastāvā ietilpst arī autonomās Fēru salas un Grenlande. Dānijas vēsture ir cieši saistīta ar vikingu laikmetu un varenām savienībām, piemēram, Kalmāras ūniju, kurā tā spēlēja vadošo lomu, savukārt mūsdienās tā ir konstitucionālā monarhija ar karali Frederiku X un viena no pasaules laimīgākajām un turīgākajām valstīm. Valsts simboli ietver dāņu karogu "Dannebrog", kas ir viens no senākajiem lietošanā esošajiem valsts karogiem pasaulē (balts krusts uz sarkana fona), un tās kultūru raksturo "hygge" dzīvesstils, riteņbraukšanas tradīcijas un pasaku meistara Hansa Kristiana Andersena mantojums. Ģeogrāfiski Dānija ir ļoti līdzena zeme ar mērenu klimatu, kuras ainavu veido piekrastes fjordi, kāpas un zaļi tīrumi, bet kā tūrisma pērles izceļas galvaspilsēta Kopenhāgena ar Mazās nāriņas skulptūru un Tivoli dārziem, vēsturiskā Roskilde, Legoland parks Bilundā un gleznainā Bornholmas sala.</p>
+            </div>
+
+            <div class="valstis" id="Norvēģija">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/250px-Flag_of_Norway.svg.png" alt="Karogs">
+                <h3>Norvēģija</h3>
+                <button onclick="raditTekstu('info_nor')">Uzzināt vairāk!</button>
+                <p id="info_nor" class="pasleptais_teksts">Norvēģija, pazīstama kā "ziemeļu ceļš", ir viena no turīgākajām valstīm pasaulē, kas aizņem Skandināvijas pussalas rietumu daļu un izceļas ar unikālu enerģētikas bilanci, gandrīz visu elektrību iegūstot no hidroelektrostacijām, lai gan ir nozīmīga naftas eksportētāja. Valsts vēsture saistīta ar leģendāro vikingu laikmetu un ilgstošām savienībām ar Dāniju un Zviedriju, līdz 1905. gadā tā atguva pilnīgu neatkarību, bet mūsdienās ir konstitucionālā monarhija un viena no NATO dibinātājvalstīm. Norvēģijas nacionālie simboli ir karogs ar zilu krustu un baltu apmali uz sarkana fona, bet tās kultūras identitāti spēcīgi ietekmē dabas mīlestība un 17. maija konstitūcijas svētku tradīcijas. Ģeogrāfiski Norvēģija ir kalnu un ūdens zeme ar pasaulslaveniem fjordiem, piemēram, Sognefjordu, iespaidīgajām Lofotu salām un Skandināvijas augstāko virsotni Galhēpigenu, savukārt trešdaļa valsts atrodas aiz polārā loka, piedāvājot tūristiem unikālu pieredzi pie Nordkapa vai vērojot ziemeļblāzmu un ledājus.</p>
+            </div>
+
+            <div class="valstis" id="Islande">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg" alt="Karogs">
+                <h3>Islande</h3>
+                <button onclick="raditTekstu('info_isl')">Uzzināt vairāk!</button>
+                <p id="info_isl" class="pasleptais_teksts">Islande ir unikāla salu valsts Atlantijas okeāna ziemeļos, kas atrodas uz divu tektonisko plātņu robežas, padarot to par vienu no ģeoloģiski aktīvākajām vietām pasaulē ar aptuveni 130 vulkāniem un neskaitāmiem geizeriem. Valsts vēsture aizsākās 9. gadsimtā ar skandināvu ieceļotājiem, un pēc ilgstošas atrašanās Norvēģijas un Dānijas pakļautībā tā 1944. gadā kļuva par neatkarīgu republiku, turklāt latviešiem tā ir īpaši nozīmīga kā pirmā valsts, kas 1991. gadā atzina Latvijas neatkarības atjaunošanu. Islandes valsts simboli un kultūra cieši savijas ar seno islandiešu valodu un sāgām, bet mūsdienās valsti pasaulē pārstāv tādas personības kā dziedātāja Bjorka; nacionālais karogs (sarkans krusts ar baltu apmali uz zila fona) simbolizē salas uguni, ledāju sniegu un okeānu. Ģeogrāfiju raksturo kontrasti starp ledājiem, kas aizņem vairāk nekā desmito daļu teritorijas, un ģeotermālo siltumu, kas nodrošina iedzīvotājiem lētu enerģiju, savukārt tūristus piesaista galvaspilsēta Reikjavīka, Zilā lagūna, iespaidīgie ūdenskritumi (piemēram, Gullfoss), Tingvedliras nacionālais parks un iespēja vērot polāro lapsu vai unikālos Islandes zirgus to dabiskajā vidē.</p>
+            </div>
+            </div>
+
+            <div class="poga_leja">
+    <a href="2index.html"><button class="sakuma_poga">Doties uz spēli!</button></a>
+</div>
+            
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
